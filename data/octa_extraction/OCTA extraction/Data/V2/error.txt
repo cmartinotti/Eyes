@@ -1,5 +1,0 @@
-Missing values for located at : 5E, 5F, 5G, 5H, 5S, 5AB, 5AM, 5AV, 5BH, 5BQ, 5CD, 5ET, 5FC, 5FP, 6E, 6F, 6G, 6H, 6S, 6AB, 6AM, 6AV, 6BH, 6BQ, 6CD, 6ET, 6FC, 6FP
-
-N/A values for etdrs density located at : 5CB, 5CC, 5CD, 6CB, 6CC, 6CD
-
-N/A values for etdrs thickness located at : 5CM, 5CN, 5CO, 6CM, 6CN, 6CO

@@ -43,13 +43,14 @@ class OCR():
                 
                 
     def _easyocr_model_load(self):
-        text_reader = easyocr.Reader(['tr','en']) #Initialzing the ocr
+        text_reader = easyocr.Reader(['en']) #Initialzing the ocr
         return text_reader
 
     def easyocr_model_works(self,visualization=True):
+        results=[]
         for i in range(len(self.images)):
-            results = self.text_reader.readtext(self.images[i] )
-            for (bbox, text, prob) in results:
+            results.append(self.text_reader.readtext(self.images[i] ))
+            for (bbox, text, prob) in results[i]:
                 print(text)
             if visualization:
                 plt.imshow(self.images[i])
