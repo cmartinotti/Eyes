@@ -18,7 +18,7 @@ class OCR():
     def load_images_from_folder(self):
         images = []
         for filename in os.listdir(self.image_folder):
-            print("IMAGES:",self.image_folder,filename)
+            # print("IMAGES:",self.image_folder,filename)
             img = cv2.imread(os.path.join(self.image_folder,filename))
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) 
 
@@ -50,8 +50,8 @@ class OCR():
         results=[]
         for i in range(len(self.images)):
             results.append(self.text_reader.readtext(self.images[i] ))
-            for (bbox, text, prob) in results[i]:
-                print(text)
+            # for (bbox, text, prob) in results[i]:
+            #     # print(text)
             if visualization:
                 plt.imshow(self.images[i])
                 plt.title("{} Image".format(str(i)));
@@ -65,7 +65,7 @@ class OCR():
             tesseract_preds.append(pytesseract.image_to_string(img))
 
         for i in range(len(self.images)):
-            print(tesseract_preds[i])
+            # print(tesseract_preds[i])
 
             if visualization:
                 plt.imshow(self.images[i])
