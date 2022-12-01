@@ -2,3 +2,5 @@ data/
 notebooks/OCTA_EXTRACTION_FILLED.xlsx
 notebooks/OCR.ipynb.old
 notebooks/evaluate/
+notebooks/__pycache__/
+OCTA_EXTRACTION_FILLED.xlsx
