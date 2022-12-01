@@ -17,7 +17,11 @@ class OCR():
 
     def load_images_from_folder(self):
         images = []
+<<<<<<< HEAD
+        for filename in sorted(os.listdir(self.image_folder)):
+=======
         for filename in os.listdir(self.image_folder):
+>>>>>>> d9d483d80e475295f8a15f416fd9fe7f36e9e46f
             # print("IMAGES:",self.image_folder,filename)
             img = cv2.imread(os.path.join(self.image_folder,filename))
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) 
